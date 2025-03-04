@@ -1,6 +1,5 @@
 # Node.js  
 
-## What is Node.js?  
 Node.js is an open-source, cross-platform **JavaScript runtime environment** that allows developers to run JavaScript code outside a web browser. It is built on **Google Chrome’s V8 JavaScript engine** and is primarily used for building **scalable, fast, and lightweight** server-side and networking applications.  
 
 ## Key Features of Node.js  
@@ -18,8 +17,6 @@ Node.js is an open-source, cross-platform **JavaScript runtime environment** tha
 ✔ Streaming applications  
 
 Node.js is widely used for modern web development, especially with frameworks like **Express.js, Nest.js, and Fastify**. 🚀  
-
----
 
 
 ## Architecture
