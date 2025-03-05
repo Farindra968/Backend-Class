@@ -123,4 +123,4 @@ const update = fs.appendFileSync("file.txt", "New content text");
 console.log(update);
 ````
 ## Asynchronous
-Asynchronous programming in JavaScript is a fundamental concept that allows you to perform tasks without blocking the main execution thread. This is particularly useful for operations that take time to complete, such as network requests, file I/O, or timers. JavaScript provides several mechanisms to handle asynchronous operations:
+Asynchronous programming in JavaScript is a fundamental concept that allows you to perform tasks without blocking the main execution thread. This is particularly useful for operations that take time to complete, such as network requests, file I/O, or timers. It help to run time consuming task in background. JavaScript provides several mechanisms to handle asynchronous operations:
