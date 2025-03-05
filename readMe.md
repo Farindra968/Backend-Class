@@ -65,4 +65,55 @@ server.listen(5000, ()=>{
     console.log("Server Running Sucessfully at Port 5000")
 })
 ```
+# FileSystem in Nodejs
+The File System (fs) module in Node.js allows you to interact with the file system on your computer. It provides methods to read, write, update, delete, and rename files and directories.
 
+
+## Importing file System Modules
+- Importing in commonjs (CJS)
+```javascript
+const fs = required {'fs'}
+``` 
+- Importing in Module (ESM)
+```javascript
+import fs from 'fs'
+```
+## Method of FileSystem (fs) in Nodejs
+- fs.readFile()
+- fs.readFileSync()
+- fs.writeFile()
+- fs.writeFileSync()
+- fs.appendFile()
+- fs.appendFileSync()
+- fs.unlink()
+- fs.rename()
+- fs.copyFile()
+- fs.mkdir()
+- fs.readdir()
+- fs.stat()
+- fs.existsSync()
+- fs.createReadStream()
+- fs.createWriteStream()
+
+Nodejs fileSystem is also divided into two part:
+- Asynchronous
+- Synchronous
+
+## Synchronous
+Synchronous code is executed in a sequential or discipline manner, meaning each operation or task is completed before moving on to the next (work done in queue). This is the default behavior of JavaScript, where code is executed line by line, and each line must finish before the next one starts.
+
+### fs.readfile()
+- fs.readFileSync() help to read the file content
+```javascript
+const data = fs.readfileSync("file.txt", "utf8")
+console.log(data)
+```
+
+### fs.writeFileSync()
+- fs.writeFileSync() help to rewrite the content by removig old content in the file
+```javascript
+const data = fs.writeFileSync("file.txt", "New text");
+console.log(data);
+```
+## Asynchronous
+Asynchronous programming in JavaScript is a fundamental concept that allows you to perform tasks without blocking the main execution thread. This is particularly useful for operations that take time to complete, such as network requests, file I/O, or timers. JavaScript provides several mechanisms to handle asynchronous operations:
