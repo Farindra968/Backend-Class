@@ -105,15 +105,22 @@ Synchronous code is executed in a sequential or discipline manner, meaning each 
 ### fs.readfile()
 - fs.readFileSync() help to read the file content
 ```javascript
-const data = fs.readfileSync("file.txt", "utf8")
-console.log(data)
+const read = fs.readfileSync("file.txt", "utf8")
+console.log(read)
 ```
 
 ### fs.writeFileSync()
 - fs.writeFileSync() help to rewrite the content by removig old content in the file
 ```javascript
-const data = fs.writeFileSync("file.txt", "New text");
-console.log(data);
+const write = fs.writeFileSync("file.txt", "New text");
+console.log(write);
 ```
+
+### fs.appendFileSync()
+- fs.appendFileSync() help to update the content without removiing or deleting previous content from the file.
+````javascript
+const update = fs.appendFileSync("file.txt", "New content text");
+console.log(update);
+````
 ## Asynchronous
 Asynchronous programming in JavaScript is a fundamental concept that allows you to perform tasks without blocking the main execution thread. This is particularly useful for operations that take time to complete, such as network requests, file I/O, or timers. JavaScript provides several mechanisms to handle asynchronous operations:
