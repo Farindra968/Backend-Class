@@ -14,9 +14,13 @@ const update = fs.appendFileSync('file.txt', ', We are learning NodeJS fie Syste
 // console.log(update);
 
 // fs.unlink()
-const unlink = fs.unlinkSync("data.txt",)
+// const unlink = fs.unlinkSync("data.txt",)
 // console.log(unlink);
 
 // fs.mkdirSync()
-const dir = fs.mkdirSync('path')
-console.log(dir)
+// const dir = fs.mkdirSync('path')
+// console.log(dir)
+
+// fs.existsSync()
+const exist = fs.existsSync("data")
+console.log(exist);

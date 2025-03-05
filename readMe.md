@@ -79,20 +79,24 @@ const fs = required {'fs'}
 import fs from 'fs'
 ```
 ## Method of FileSystem (fs) in Nodejs
-- fs.readFile()
+#### Synchronous
 - fs.readFileSync()
-- fs.writeFile()
 - fs.writeFileSync()
-- fs.appendFile()
 - fs.appendFileSync()
-- fs.unlink()
 - fs.unlinkSync()
+- fs.mkdirSync()
+- fs.existsSync()
+
+#### Asynchronous
+- fs.readFile()
+- fs.writeFile()
+- fs.appendFile()
+- fs.unlink()
 - fs.rename()
 - fs.copyFile()
 - fs.mkdir()
 - fs.readdir()
 - fs.stat()
-- fs.existsSync()
 - fs.createReadStream()
 - fs.createWriteStream()
 
@@ -136,6 +140,17 @@ console.log(unlink);
 ````javascript
 const dir= fs.mkdirSync("new-pathname");
 console.log(dir);
+````
+
+### fs.existsSync()
+- fs.existsSync() main purpose is to check whether the directories or file exist or not. It return true or false. If exist it return true, if not exist return false.
+````javascript
+const exist = fs.existsSync("my_drectories")
+console.log(exit);
+````
+````javascript
+const exist = fs.existsSync("my_file.txt")
+consol.log(exist)
 ````
 ## Asynchronous
 Asynchronous programming in JavaScript is a fundamental concept that allows you to perform tasks without blocking the main execution thread. This is particularly useful for operations that take time to complete, such as network requests, file I/O, or timers. It help to run time consuming task in background. JavaScript provides several mechanisms to handle asynchronous operations:
