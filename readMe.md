@@ -107,7 +107,7 @@ Nodejs fileSystem is also divided into two part:
 ## Synchronous
 Synchronous code is executed in a sequential or discipline manner, meaning each operation or task is completed before moving on to the next (work done in queue). This is the default behavior of JavaScript, where code is executed line by line, and each line must finish before the next one starts.
 
-### fs.readfile()
+### fs.readFileSync()
 - fs.readFileSync() help to read the file content
 ```javascript
 const read = fs.readfileSync("file.txt", "utf8")
@@ -154,3 +154,32 @@ consol.log(exist)
 ````
 ## Asynchronous
 Asynchronous programming in JavaScript is a fundamental concept that allows you to perform tasks without blocking the main execution thread. This is particularly useful for operations that take time to complete, such as network requests, file I/O, or timers. It help to run time consuming task in background. JavaScript provides several mechanisms to handle asynchronous operations:
+
+### fs.readFile()
+- fs.readFile() help to read the file content
+```javascript
+fs.readFile("file.txt", 'utf8', (error, data)=>{
+    if(error){
+        console.log(error)
+        } 
+        console.log(data)})
+```
+### fs.writeFile()
+- fs.writeFile() help to rewrite the content by removig old content in the file
+```javascript
+fs.writeFile("file.txt", "This is new content",  (error, data) =>{
+    if(error) {
+        console.log(error)
+    } console.log(data)
+})
+```
+### fs.appendFile()
+- fs.appendFile() help to update the content without removiing or deleting previous content from the file.
+````javascript
+fs.appendFile("file.txt", "Adding New Content", (error, data)=>{
+    if(error) {
+        console.log(error)
+    }
+    console.log(data)
+})
+````
